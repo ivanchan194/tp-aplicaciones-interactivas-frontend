@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Dashboard from '../Dashboard/Dashboard';
 import Login from '../Login/Login';
 import Profile from '../Profile/Profile';
+import Register from '../Register/Register';
 import useToken from './useToken';
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
                     </Route>
                     <Route path="/login">
                         <Login setToken={setToken} />
+                    </Route>
+                    <Route path="/register">
+                        <Register />
                     </Route>
                 </Switch>
             </BrowserRouter>
